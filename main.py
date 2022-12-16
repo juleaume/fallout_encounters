@@ -7,7 +7,7 @@ display = PicoGraphics(display=DISPLAY_INKY_PACK)
 WIDTH, HEIGHT = display.get_bounds()
 # you can change the update speed here!
 # it goes from 0 (slowest) to 3 (fastest)
-display.set_update_speed(2)
+display.set_update_speed(1)
 
 display.set_font("bitmap8")
 
@@ -266,7 +266,7 @@ def on_button_c():
     """
     clear()
     display.text(
-        f"0x{urandom.randint(0, 0xffff):04X} Com. Satellite... OK! ",
+        f"Connexion Satellite... OK! ",
         0, 0, WIDTH - 10, 2
     )
     display.text("Bulletin météo Vault-Tec :", 0, 20, WIDTH - 10, 2)
